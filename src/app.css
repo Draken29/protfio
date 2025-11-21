@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;  
+  background-color: #1a1721;
+  color: white;
+  overflow-x: hidden;
+  overscroll-behavior: none;
+}
+.dragger {
+  pointer-events: all;
+}
+
+.body {
+  position: absolute;
+  background: var(--color);
+  width: var(--size);
+  height: var(--size);
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  outline: 2px solid black;
+}
+
+.leg {
+  position: absolute;
+  width: 20px;
+  height: var(--leg);
+  border: 10px solid black;
+  border-style: none solid solid none;
+  right: calc(var(--size) * 0.5);
+  top: calc(var(--size) * 0.5 - var(--leg) * 0.5);
+  transform-origin: 100% calc(var(--size) * -0.5);
+}
+
+.snooze-particle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  color: black;
+  font-size: 20px;
+  user-select: none;
+  pointer-events: none;
+}
+
+.ground-particle {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: black;
+  z-index: 2;
+}
+
+
+
+
+
+
+
+
